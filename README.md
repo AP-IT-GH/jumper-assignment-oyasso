@@ -91,3 +91,4 @@ Opwaartse kracht op de agent uitoefenen. 
 De belangrijkste factor die voor het meeste succes heeft gezorgd in dit project is het niet afstraffen van bepaalde acties en slechts goeie punten toewijzen op de juiste momenten. Het resultaat is een agent die het liefst van al niet geraakt wil worden maar ook graag stil wilt blijven staan waardoor hij enkel op de nodige momenten zal springen.
 
 Link naar het filmpje:
+https://ap.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=9153b35f-dae9-4f86-b108-b1d301433d11
