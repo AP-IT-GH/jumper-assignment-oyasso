@@ -1,0 +1,29 @@
+{
+    "CubeAgentRays": {
+        "checkpoints": [
+            {
+                "steps": 50012,
+                "file_path": "results\\CubeAgentParallel81.2\\CubeAgentRays\\CubeAgentRays-50012.onnx",
+                "reward": 0.8571428571428571,
+                "creation_time": 1714318140.4712696,
+                "auxillary_file_paths": [
+                    "results\\CubeAgentParallel81.2\\CubeAgentRays\\CubeAgentRays-50012.pt"
+                ]
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 50012,
+            "file_path": "results\\CubeAgentParallel81.2\\CubeAgentRays.onnx",
+            "reward": 0.8571428571428571,
+            "creation_time": 1714318140.4712696,
+            "auxillary_file_paths": [
+                "results\\CubeAgentParallel81.2\\CubeAgentRays\\CubeAgentRays-50012.pt"
+            ]
+        }
+    },
+    "metadata": {
+        "stats_format_version": "0.3.0",
+        "mlagents_version": "0.30.0",
+        "torch_version": "1.7.1+cu110"
+    }
+}
