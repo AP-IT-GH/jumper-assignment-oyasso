@@ -1,31 +1,29 @@
-MLAgents Deel III – JumperAgent
-
-Inleiding
+**MLAgents Deel III – JumperAgent
+**
+**Inleiding**
 
 Het doel van dit project is een mlagent succesvol trainen om over obstakels te springen. De applicatie bestaat uit 3 soorten objecten; de agent, de obstakels en de muur achter de agent. Het doel van de agent is ervoor zorgen dat de obstakels de muur aanraken zonder dat ze zichzelf aanraken. Dit is de manier voor hem om punten te scoren.
 
-Opbouw
+**Opbouw**
+
 ![image](https://github.com/user-attachments/assets/222d351a-be8a-4927-9f7b-f4c63d22881e)
 ![image](https://github.com/user-attachments/assets/f0c82c79-de7e-434d-93bb-3b93bb75378f)
 
- 
- 
-.yaml configuratie
+**.yaml configuratie**
 
 Dit zijn de settings in de yaml file die ik gebruikt heb voor het trainen van de agent:
 ![image](https://github.com/user-attachments/assets/679cee08-55c9-4c4e-85c2-0ed4e2734357)
 
  
-Actions
+**Actions**
 
 De agent beschikt over twee verschillende acties: springen en niets doen. Als hij kiest voor springen zal een vectorkracht in de y-as richting bovenwaarts uitgeoefend worden op het agentobject.
 
- 
-Rewards system
+**Rewards system**
 
 Voor het rewards systeem heb ik ervoor gekozen enkel punten bij te geven als hij iets goed doet en geen punten af te trekken. Als het obstakel de muur achter de agent aanraakt verdient hij 1.0 punten. Om ervoor te zorgen dat de agent niet constant blijft springen heb ik hem ook punten gegeven wanneer hij stilstaat; 0.1 * Time.deltaTime. Deze puntenverdeling werkte het best tijdens het trainen.
 
-Trainingsproces
+**Trainingsproces**
 
 Zoals eerder vermeld ging het trainingsproces pas heel vlot wanneer ik niet meer met negatieve puntenverdeling werkte.
 ![image](https://github.com/user-attachments/assets/831d62a1-f4fb-4095-a23b-941c0b4910b1)
@@ -35,7 +33,7 @@ De JumperAgent1.0 en 2.0 getuigen van zo’n puntenverdeling. Daarna kreeg ik be
 
 Deze versie heb ik dan ook langer laten trainen waardoor het resultaat er heel goed uitziet.
 
-Code Snippets
+**Code Snippets**
 
 Dit zijn snippets van het JumperAgent.cs script, een component van de agent.
 
@@ -88,7 +86,7 @@ Jump:
 
 Opwaartse kracht op de agent uitoefenen. 
 
-Conclusie
+**Conclusie**
 
 De belangrijkste factor die voor het meeste succes heeft gezorgd in dit project is het niet afstraffen van bepaalde acties en slechts goeie punten toewijzen op de juiste momenten. Het resultaat is een agent die het liefst van al niet geraakt wil worden maar ook graag stil wilt blijven staan waardoor hij enkel op de nodige momenten zal springen.
 
